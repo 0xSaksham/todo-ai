@@ -23,7 +23,7 @@ export default function LoginForm() {
               className="h-16 w-20 md:h-16 md:w-20"
             />
             <h1 className="text-xl hidden lg:flex font-medium text-gray-950 md:text-3xl">
-              TodoVex
+              Todo-AI
             </h1>
           </Link>
           <div className="hidden lg:flex w-fit items-center">
