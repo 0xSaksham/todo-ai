@@ -169,7 +169,15 @@ Detailed Component Hierarchy:
 
 ### Architecture Overview
 
-![Architecture Diagram](deepseek_mermaid_20250422_37e4d2.svg)
+```mermaid
+graph TD
+    A[User Input] --> B(NLP Processing)
+    B --> C{Intent Recognition}
+    C -->|Task Creation| D[GPT-3.5 Suggestion]
+    C -->|Search Query| E[Vector Embedding]
+    D --> F[Task Recommendations]
+    E --> G[Semantic Search]
+```
 
 ### Key AI Features
 
