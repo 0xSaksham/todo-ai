@@ -6,6 +6,7 @@ import { GlowEffectButton } from "@/components/ui/glowing-button";
 import { useFormStatus } from "react-dom";
 import { Loader, StepForward } from "lucide-react";
 import clsx from "clsx";
+import { signInAction } from "@/actions/auth-action";
 
 function ElegantShape({
   className,
@@ -172,7 +173,9 @@ function HeroGeometric() {
         </div>
       </div>
       <div>
-        <GetStartedButton />
+        <form action={signInAction}>
+          <GetStartedButton />
+        </form>
       </div>
     </div>
   );
